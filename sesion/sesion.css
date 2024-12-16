@@ -1,0 +1,90 @@
+header {
+    background-color: #3affe5f8;
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+body {
+    margin-top: 7%;
+    background-image: url("../recursos/main_container.jpg");
+    background-position-x: left;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+#logo {
+    width: 15%;
+    height: auto;
+}
+
+#navbar_buttons {
+    display: flex;
+}
+
+#navbar_link a {
+    margin: 6px;
+    padding: 10px 20px;
+    background-color: #00ccc5;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Bahnschrift Light", sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navbar_link a:hover {
+    background-color: #3cff00;
+    color: #ffffff;
+}
+
+#form_registro {
+    background-color: rgba(19, 183, 172, 0.4);
+    border: 2px goldenrod solid;
+    width: 500px;
+    padding: 50px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sesion {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+input {
+    background-color: rgb(255, 255, 255);
+    height: 30px;
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgba(0, 183, 255, 0.866);
+    height: 40px;
+    width: 120px;
+    text-align: center;
+    margin: 0 auto;
+    border: 3px gold solid;
+    font-size: 20px;
+    font-weight: bold;
+    font-stretch: expanded;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

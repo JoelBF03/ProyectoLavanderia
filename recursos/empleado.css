@@ -1,0 +1,118 @@
+/* EMPLEADO - Estilos Generales */
+
+/* Reseteo de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;  /* Fondo claro */
+    color: #333;
+}
+
+/* Encabezado y barra de navegación */
+header {
+    background-color: #003366;  /* Azul oscuro */
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+}
+
+#navbar_buttons a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+#navbar_buttons a:hover {
+    background-color: #00509e;  /* Azul más claro al pasar el ratón */
+}
+
+/* Título de bienvenida */
+h1 {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.8em;
+    color: #003366;
+}
+
+/* Nombre de usuario */
+#nombre_menu {
+    font-weight: bold;
+}
+
+/* Contenedor de botones */
+#functions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.row button {
+    margin: 0 15px;
+}
+
+/* Botones */
+#functions button {
+    background-color: #007BFF;  /* Azul brillante */
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+#functions button:hover {
+    background-color: #0056b3;  /* Azul más oscuro al pasar el ratón */
+}
+
+/* Responsive Design: Ajustar diseño para pantallas pequeñas */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #navbar_buttons a {
+        margin: 5px 0;
+    }
+
+    #functions button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row button {
+        margin: 10px 0;
+    }
+}

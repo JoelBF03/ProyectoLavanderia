@@ -1,0 +1,165 @@
+/* Estilos generales para la página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+/* Estilo para el encabezado */
+header {
+    background-color: #1E3A8A; /* Color oscuro para el encabezado */
+    padding: 20px;
+    color: white;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#navbar_buttons a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+#navbar_buttons a:hover {
+    text-decoration: underline;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    color: #1E3A8A;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+/* Estilo del formulario */
+#form_perfil {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#form_perfil input[type="text"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#form_perfil button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50; /* Botón verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#form_perfil button:hover {
+    background-color: #45a049;
+}
+
+/* Botón de guardar cambios oculto */
+#habilitar_edicion {
+    display: block;
+    margin: 0 auto 20px auto; /* Centrar el botón y dar margen inferior */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    width: fit-content; /* Ajustar ancho al contenido */
+}
+
+#habilitar_edicion:hover {
+    background-color: #0056b3;
+}
+
+/* Botón de guardar cambios */
+#guardar_cambios {
+    display: none; /* Ocultar inicialmente */
+    margin: 0 auto 20px auto; /* Centrar el botón */
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    width: fit-content; /* Ajustar ancho al contenido */
+}
+
+#guardar_cambios:hover {
+    background-color: #45a049;
+}
+
+button {
+    transition: background-color 0.3s; /* Animación suave en hover */
+}
+
+/* Estilo de la tabla */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #1E3A8A;
+    color: white;
+    font-size: 16px;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #form_perfil {
+        width: 90%;
+    }
+
+    table {
+        width: 100%;
+    }
+}
